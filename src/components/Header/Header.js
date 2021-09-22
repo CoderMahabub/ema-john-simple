@@ -11,6 +11,10 @@ const Header = () => {
                 <a href="/orders">Order Review</a>
                 <a href="/inventory">Manage Inventory</a>
             </nav>
+            <section className="search-bar">
+                <input type="Type here to search" name="" id="" />
+                <i class="fas fa-shopping-cart"><span> 0</span></i>
+            </section>
         </div>
     );
 };

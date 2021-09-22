@@ -19,3 +19,22 @@
 .header nav a:hover{
     background-color: lightgray;
 }
+.search-bar{
+    background-color: rgba(0, 0, 0, 0.767);
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar input{
+    width: 70%;
+    padding: 5px 8px;
+}
+.search-bar i{
+    font-size: 30px;
+    margin-left: 10px;
+    color: #fff;
+}
+.search-bar span{
+    color:rgb(235, 182, 11);
+}
