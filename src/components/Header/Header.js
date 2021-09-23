@@ -13,7 +13,7 @@ const Header = () => {
             </nav>
             <section className="search-bar">
                 <input type="Type here to search" name="" id="" />
-                <i class="fas fa-shopping-cart"><span> 0</span></i>
+                <i className="fas fa-shopping-cart"><span> 0</span></i>
             </section>
         </div>
     );
