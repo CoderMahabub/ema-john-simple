@@ -15,7 +15,7 @@ const Header = () => {
                 <a href="/inventory">Manage Inventory</a>
             </nav>
             <section className="search-bar">
-                <input type="Type here to search" name="" id="" />
+                <input type="Type here to search" />
                 <span>{cartIcon} 0</span>
             </section>
         </div>
