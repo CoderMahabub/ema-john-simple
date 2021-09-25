@@ -28,8 +28,8 @@ const Cart = (props) => {
                     <td>: {totalQuantity}</td>
                 </tr>
                 <tr>
-                    <td>Ordered Item</td>
-                    <td>: {total}</td>
+                    <td>Ordered Price</td>
+                    <td>: {total.toFixed(2)}</td>
                 </tr>
                 <tr>
                     <td>Shopping</td>
