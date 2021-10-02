@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useCart from '../../hooks/useCart';
 import useProducts from '../../hooks/useProducts';
 import { removeFromDb } from '../../utilities/fakedb';
@@ -26,7 +27,11 @@ const OrderReview = () => {
                 }
             </div>
             <div className="cart-container">
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart}>
+                    <Link to="/place-order">
+                        <button className="btn-regular">Place Order</button>
+                    </Link>
+                </Cart>
             </div>
         </div>
     );
