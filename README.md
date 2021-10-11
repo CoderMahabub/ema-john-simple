@@ -3,7 +3,8 @@
 #### Live Site: [Live Website](https://ema-john-shop-online.netlify.app/).
 
 
- TODO: Steps for authentication
+ ### TODO: Steps for authentication
+
 ========================
 Step -1: Initial Setup
 1. Firebase: Create Project
@@ -11,6 +12,7 @@ Step -1: Initial Setup
 3. Get Configuration
 4. Initialize Firebase
 5. Enable Auth Method
+
 ===================================
 Step-2:
 1. Create Login Component
