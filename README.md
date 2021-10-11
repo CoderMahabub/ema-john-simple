@@ -3,7 +3,7 @@
 #### Live Site: [Live Website](https://ema-john-shop-online.netlify.app/).
 
 
-<!-- TODO: Steps for authentication
+ TODO: Steps for authentication
 ========================
 Step -1: Initial Setup
 1. Firebase: Create Project
@@ -22,4 +22,4 @@ Step-3:
 1. Set up sign in methode
 2. setup sign out methode
 3. user state
-4. Special Observer -->
+4. Special Observer
