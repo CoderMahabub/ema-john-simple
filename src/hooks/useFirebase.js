@@ -22,8 +22,7 @@ const useFirebase = () => {
             })
     }
 
-
-    // UseEffect Eta use korte hoy
+    // Observe wheather user auth state changed or not
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
             if (user) {
@@ -31,8 +30,6 @@ const useFirebase = () => {
             }
         });
     }, [])
-
-
 
     const logOut = () => {
         signOut(auth)
