@@ -37,3 +37,7 @@ src/context folder
 #### Step-5: Crate Private Route=======================
 1. Create Private Route
 2. Set Private Route
+
+#### Step-6: Redireact after login===================
+1. after login redirect user to their desired destination
+

@@ -13,13 +13,8 @@ const useFirebase = () => {
 
     //Handle Google SignIn
     const signInUsingGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                console.log(result.user)
-            })
-            .catch(error => {
-                setError(error.messsage);
-            })
+        return signInWithPopup(auth, googleProvider)
+
     }
 
     // Observe wheather user auth state changed or not
