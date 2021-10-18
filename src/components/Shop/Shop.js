@@ -12,7 +12,7 @@ const Shop = () => {
 
     useEffect(() => {
         // console.log('Product APi Called');
-        fetch('./products.JSON')
+        fetch('./products.json')
             .then(res => res.json())
             .then(data => {
                 setProducts(data);
