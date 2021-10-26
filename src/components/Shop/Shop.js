@@ -8,18 +8,22 @@ import './Shop.css';
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
+    const [pageCount, setPageCount] = useState(0);
+    const [page, setPage] = useState(0);
     const [displayProducts, setDisplayProducts] = useState([]);
-
+    const size = 10;
     useEffect(() => {
         // console.log('Product APi Called');
-        fetch('./products.json')
+        fetch(`http://localhost:5000/products?page=${page}&&size=${size}`)
             .then(res => res.json())
             .then(data => {
                 setProducts(data);
-                setDisplayProducts(data);
-                // console.log('Product Received');
+                setDisplayProducts(data.products);
+                const count = data.count;
+                const pageNumber = Math.ceil(count / 10);
+                setPageCount(pageNumber);
             });
-    }, []);
+    }, [page]);
 
     useEffect(() => {
         // console.log('Local Storage Cart Called');
@@ -83,6 +87,16 @@ const Shop = () => {
                             handleAddToCart={handleAddToCart}>
                         </Product>)
                     }
+                    <div className="pagination">
+                        {
+                            [...Array(pageCount).keys()]
+                                .map(number => <button
+                                    key={number}
+                                    className={number === page ? 'selected' : ''}
+                                    onClick={() => setPage(number)}
+                                >{number}</button>)
+                        }
+                    </div>
                 </div>
                 <div className="cart-container">
                     <Cart cart={cart}>
