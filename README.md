@@ -12,13 +12,13 @@
 4. Initialize Firebase
 5. Enable Auth Method
 
-#### Step-2: Setup Component==========================
+#### Step-2: Setup Component=======================
 component/
 1. Create Login Component
 2. Create Register Component
 3. Create Route for LogIn and Register
 
-#### Step-3: Setup Auth System========================
+#### Step-3: Setup Auth System=====================
 hooks/useFirebase
 1. Set up sign in methode
 2. setup sign out methode
@@ -26,7 +26,7 @@ hooks/useFirebase
 4. Special Observer
 5. Return Neccessary Methods and states from useFirebase
 
-#### Step-4: Create Auth Context Hook (useAuth)=======
+#### Step-4: Create Auth Context Hook (useAuth)=====
 src/context folder
 1. Create a auth context
 2. create context provider
